@@ -1,13 +1,11 @@
-import os
+import streamlit as st
 
-# Access the API key from environment variables
-api_key_str = os.getenv("OPENAI_API_KEY")
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 from openai import OpenAI
-client = OpenAI(api_key=api_key_str)
+client = OpenAI(api_key=openai_api_key)
 
 
-import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import requests

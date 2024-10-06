@@ -1,3 +1,5 @@
+pip install openai
+
 import os
 
 # Access the API key from environment variables

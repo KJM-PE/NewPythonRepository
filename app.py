@@ -13,7 +13,7 @@ df = pd.DataFrame({
 })
 
 # Title of the app
-st.title("Stuart is a loser...")
+st.title("Mi amorrr...mi amorrr...mi amorrrr")
 
 # Display the DataFrame
 st.subheader("Time Series Data (First 100 Points)")

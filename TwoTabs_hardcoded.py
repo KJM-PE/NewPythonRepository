@@ -1,4 +1,4 @@
-pip install openai
+install openai
 
 import os
 

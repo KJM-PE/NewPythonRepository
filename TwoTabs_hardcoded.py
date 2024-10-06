@@ -3,8 +3,9 @@ import streamlit as st
 
 from openai import OpenAI
 
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
+client = OpenAI(api_key=openai_api_key)
 
 import pandas as pd
 import matplotlib.pyplot as plt

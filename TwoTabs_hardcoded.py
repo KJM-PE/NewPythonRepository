@@ -60,7 +60,7 @@ messages=[
     {"role": "system", "content": "You are a data analysis assistant."},
     {"role": "user", "content": prompt}
 ],
-max_tokens=500)
+max_tokens=800)
 
 chatresult_string=response.choices[0].message.content.strip()
 

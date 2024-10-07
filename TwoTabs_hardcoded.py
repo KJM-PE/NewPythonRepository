@@ -24,7 +24,9 @@ uploaded_df = None
 
 # Input field for GitHub raw URL
 github_url = "https://github.com/KJM-PE/NewPythonRepository/raw/refs/heads/master/data.xlsx"
-    
+
+print(github_url)
+
 if github_url:
         try:
             # Fetch the Excel file from the provided URL
@@ -39,6 +41,8 @@ if github_url:
         
         except Exception as e:
             st.error(f"An error occurred while loading the file: {e}")
+
+print(uploaded_df)
 
 dataframe_text = uploaded_df.to_string(index=False)
 
